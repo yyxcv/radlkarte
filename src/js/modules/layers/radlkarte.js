@@ -1,3 +1,5 @@
+const widthFunctionPriority0 = ["interpolate", ["linear"], ["zoom"], 8, 1, 20, 6];
+
 const getRadlkarteLayersFor = function (sourceName) {
   return [
     {
@@ -5,7 +7,7 @@ const getRadlkarteLayersFor = function (sourceName) {
       "type": "line",
       "source": sourceName,
       "filter": ["all", ["==", "stress", "0"], ["==", "priority", "0"]],
-      "paint": { "line-color": "#004B67", "line-width": 2 }
+      "paint": { "line-color": "#004B67", "line-width": widthFunctionPriority0 }
     },
     {
       "id": "stress0_priority1" + sourceName,
@@ -28,7 +30,7 @@ const getRadlkarteLayersFor = function (sourceName) {
       "type": "line",
       "source": sourceName,
       "filter": ["all", ["==", "stress", "1"], ["==", "priority", "0"]],
-      "paint": { "line-color": "#51A4B6", "line-width": 2 }
+      "paint": { "line-color": "#51A4B6", "line-width": widthFunctionPriority0 }
     },
     {
       "id": "stress1_priority1" + sourceName,
@@ -51,7 +53,7 @@ const getRadlkarteLayersFor = function (sourceName) {
       "type": "line",
       "source": sourceName,
       "filter": ["all", ["==", "stress", "2"], ["==", "priority", "0"]],
-      "paint": { "line-color": "#FF6600", "line-width": 2 }
+      "paint": { "line-color": "#FF6600", "line-width": widthFunctionPriority0 }
     },
     {
       "id": "stress2_priority1" + sourceName,
