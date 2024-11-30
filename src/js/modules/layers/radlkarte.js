@@ -1,4 +1,4 @@
-const widthFunctionPriority0 = ["interpolate", ["linear"], ["zoom"], 8, 1, 20, 6];
+const widthFunctionPriority0 = ["interpolate", ["linear"], ["zoom"], 9, 1, 20, 10];
 
 const getRadlkarteLayersFor = function (sourceName) {
   return [
