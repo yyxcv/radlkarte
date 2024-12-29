@@ -4,6 +4,13 @@ const widthFunctionPriority0 = [
   20, 10
 ];
 
+const widthFunctionUnpavedPriority1And2 = [
+  "interpolate", ["linear"], ["zoom"],
+  9, 1,
+  20, 1.8
+];
+
+
 const lineColors = [
   "match", ["get", "stress"],
   "0", "#004B67",
@@ -13,7 +20,7 @@ const lineColors = [
 ];
 
 
-const lineDashArray = [2.5, 3];
+const lineDashArray = [3, 3];
 
 //steil
 //einbahn
@@ -39,7 +46,7 @@ const getUnpavedLayersFor = function (sourceName) {
       "paint": {
         "line-color": lineColors,
         "line-dasharray": lineDashArray,
-        "line-width": 1
+        "line-width": widthFunctionUnpavedPriority1And2
       },
       "minzoom": 12,
     },
@@ -51,7 +58,7 @@ const getUnpavedLayersFor = function (sourceName) {
       "paint": {
         "line-color": lineColors,
         "line-dasharray": lineDashArray,
-        "line-width": 1
+        "line-width": widthFunctionUnpavedPriority1And2
       },
       "minzoom": 14,
     },
