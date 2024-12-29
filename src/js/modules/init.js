@@ -14,7 +14,7 @@ function init() {
           "name": "Positron",
           "metadata": {},
           "sources": sources,
-          "sprite": "https://tiles.basemaps.cartocdn.com/gl/positron-gl-style/sprite",
+          "sprite": "./sprite",
           "glyphs": "https://tiles.basemaps.cartocdn.com/fonts/{fontstack}/{range}.pbf",
           "layers": layers
         },
