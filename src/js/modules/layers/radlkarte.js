@@ -20,7 +20,8 @@ const lineColors = [
 ];
 
 
-const lineDashArray = [3, 3];
+const lineDashArrayPriority0 = [2, 1.6];
+const lineDashArrayPriority1And2 = [3, 3];
 
 //steil
 //einbahn
@@ -34,7 +35,7 @@ const getUnpavedLayersFor = function (sourceName) {
       "filter": ["all", ["==", "priority", "0"], ["==", "unpaved", "yes"]],
       "paint": {
         "line-color": lineColors,
-        "line-dasharray": lineDashArray,
+        "line-dasharray": lineDashArrayPriority0,
         "line-width": widthFunctionPriority0
       }
     },
@@ -45,7 +46,7 @@ const getUnpavedLayersFor = function (sourceName) {
       "filter": ["all", ["==", "priority", "1"], ["==", "unpaved", "yes"]],
       "paint": {
         "line-color": lineColors,
-        "line-dasharray": lineDashArray,
+        "line-dasharray": lineDashArrayPriority1And2,
         "line-width": widthFunctionUnpavedPriority1And2
       },
       "minzoom": 12,
@@ -57,7 +58,7 @@ const getUnpavedLayersFor = function (sourceName) {
       "filter": ["all", ["==", "priority", "2"], ["==", "unpaved", "yes"]],
       "paint": {
         "line-color": lineColors,
-        "line-dasharray": lineDashArray,
+        "line-dasharray": lineDashArrayPriority1And2,
         "line-width": widthFunctionUnpavedPriority1And2
       },
       "minzoom": 14,
