@@ -4,6 +4,7 @@
   "version": "1.0.0",
   "author": "Radlobby Östereich (https://radlobby.at)",
   "license": "Apache-2.0",
+  "type": "module",
   "repository": {
     "type": "git",
     "url": "https://github.com/markusstraub/radlkarte.git"
