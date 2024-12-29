@@ -33,7 +33,7 @@
   "devDependencies": {
     "html5-lint": "^0.3.0",
     "jshint": "^2.13.6",
-    "vite": "^5.4.1"
+    "vite": "5.4.6"
   },
   "dependencies": {
     "maplibre-gl": "^4.7.0"
