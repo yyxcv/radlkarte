@@ -4,7 +4,7 @@ const widthPriority0 = [
   20, 10
 ];
 
-const getPavedRadlkarteLayersFor = function (sourceName, commonSettings) {
+const getNormalLayersFor = function (sourceName, commonSettings) {
   return [
     {
       "id": "priority0" + sourceName,
@@ -41,4 +41,4 @@ const getPavedRadlkarteLayersFor = function (sourceName, commonSettings) {
   ];
 }
 
-export default getPavedRadlkarteLayersFor;
+export default getNormalLayersFor;
