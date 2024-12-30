@@ -8,6 +8,13 @@ export default defineConfig({
     outDir: '../dist',
     assetsDir: 'assets',
   },
-  plugins: [replaceGeoJsonInHtml()],
-
+  plugins: [replaceGeoJsonInHtml(),],
+  server: {
+    proxy: {
+      'sprite': {
+        target: 'http://127.0.0.1:8080/',
+        changeOrigin: true,
+      },
+    },
+  },
 })

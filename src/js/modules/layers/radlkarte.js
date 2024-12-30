@@ -1,22 +1,22 @@
-const widthFunctionPriority0 = [
+const widthPriority0 = [
   "interpolate", ["linear"], ["zoom"],
   9, 1,
   20, 10
 ];
 
-const widthFunctionPriority0OneWay = [
+const widthPriority0OneWay = [
   "interpolate", ["linear"], ["zoom"],
   9,  2,
   20, 28
 ];
 
-const widthFunctionPriority1And2OneWay = [
+const widthPriority1And2OneWay = [
   "interpolate", ["linear"], ["zoom"],
   9,  1,
   20, 20
 ];
 
-const widthFunctionUnpavedPriority1And2 = [
+const widthUnpavedPriority1And2 = [
   "interpolate", ["linear"], ["zoom"],
   9, 1,
   20, 1.8
@@ -50,6 +50,8 @@ const linePatternSteep = [
 const lineDashArrayPriority0 = [2, 1.6];
 const lineDashArrayPriority1And2 = [3, 3];
 
+const minZoomPriority1 = 12;
+const minZoomPriority2 = 14;
 
 
 const getSteepLayersFor = function(sourceName){
@@ -61,7 +63,7 @@ const getSteepLayersFor = function(sourceName){
       "filter": ["all", ["==", "priority", "0"], ["==", "steep", "yes"]],
       "paint": {
         "line-color": lineColors,
-        "line-width": widthFunctionPriority0OneWay,
+        "line-width": widthPriority0OneWay,
         "line-pattern": linePatternSteep
       }
     },
@@ -72,10 +74,10 @@ const getSteepLayersFor = function(sourceName){
       "filter": ["all", ["==", "priority", "1"], ["==", "steep", "yes"]],
       "paint": {
         "line-color": lineColors,
-        "line-width": widthFunctionPriority1And2OneWay,
+        "line-width": widthPriority1And2OneWay,
         "line-pattern": linePatternSteep
       },
-      "minzoom": 12,
+      "minzoom": minZoomPriority1,
     },
     {
       "id": "priority2" + sourceName + "_steep",
@@ -84,10 +86,10 @@ const getSteepLayersFor = function(sourceName){
       "filter": ["all", ["==", "priority", "2"], ["==", "steep", "yes"]],
       "paint": {
         "line-color": lineColors,
-        "line-width": widthFunctionPriority1And2OneWay,
+        "line-width": widthPriority1And2OneWay,
         "line-pattern": linePatternSteep
       },
-      "minzoom": 14,
+      "minzoom": minZoomPriority2,
     },
   ];
 }
@@ -102,7 +104,7 @@ const getOneWayLayersFor = function(sourceName){
       "filter": ["all", ["==", "priority", "0"], ["==", "oneway", "yes"]],
       "paint": {
         "line-color": lineColors,
-        "line-width": widthFunctionPriority0OneWay,
+        "line-width": widthPriority0OneWay,
         "line-pattern": linePatternOneway
       }
     },
@@ -113,10 +115,10 @@ const getOneWayLayersFor = function(sourceName){
       "filter": ["all", ["==", "priority", "1"], ["==", "oneway", "yes"]],
       "paint": {
         "line-color": lineColors,
-        "line-width": widthFunctionPriority1And2OneWay,
+        "line-width": widthPriority1And2OneWay,
         "line-pattern": linePatternOneway
       },
-      "minzoom": 12,
+      "minzoom": minZoomPriority1,
     },
     {
       "id": "priority2" + sourceName + "_oneway",
@@ -125,10 +127,10 @@ const getOneWayLayersFor = function(sourceName){
       "filter": ["all", ["==", "priority", "2"], ["==", "oneway", "yes"]],
       "paint": {
         "line-color": lineColors,
-        "line-width": widthFunctionPriority1And2OneWay,
+        "line-width": widthPriority1And2OneWay,
         "line-pattern": linePatternOneway
       },
-      "minzoom": 14,
+      "minzoom": minZoomPriority2,
     },
   ];
 }
@@ -143,7 +145,7 @@ const getUnpavedLayersFor = function (sourceName) {
       "paint": {
         "line-color": lineColors,
         "line-dasharray": lineDashArrayPriority0,
-        "line-width": widthFunctionPriority0
+        "line-width": widthPriority0
       }
     },
     {
@@ -154,9 +156,9 @@ const getUnpavedLayersFor = function (sourceName) {
       "paint": {
         "line-color": lineColors,
         "line-dasharray": lineDashArrayPriority1And2,
-        "line-width": widthFunctionUnpavedPriority1And2
+        "line-width": widthUnpavedPriority1And2
       },
-      "minzoom": 12,
+      "minzoom": minZoomPriority1,
     },
     {
       "id": "priority2" + sourceName + "_unpaved",
@@ -166,9 +168,9 @@ const getUnpavedLayersFor = function (sourceName) {
       "paint": {
         "line-color": lineColors,
         "line-dasharray": lineDashArrayPriority1And2,
-        "line-width": widthFunctionUnpavedPriority1And2
+        "line-width": widthUnpavedPriority1And2
       },
-      "minzoom": 14,
+      "minzoom": minZoomPriority2,
     },
   ];
 }
@@ -182,7 +184,7 @@ const getPavedRadlkarteLayersFor = function (sourceName) {
       "filter": ["all", ["==", "priority", "0"], ["!=", "unpaved", "yes"]],
       "paint": {
         "line-color": lineColors,
-        "line-width": widthFunctionPriority0,
+        "line-width": widthPriority0,
       }
     },
     {
@@ -194,7 +196,7 @@ const getPavedRadlkarteLayersFor = function (sourceName) {
         "line-color": lineColors,
         "line-width": 1
       },
-      "minzoom": 12,
+      "minzoom": minZoomPriority1,
     },
     {
       "id": "priority2" + sourceName,
@@ -205,7 +207,7 @@ const getPavedRadlkarteLayersFor = function (sourceName) {
         "line-color": lineColors,
         "line-width": 1
       },
-      "minzoom": 14,
+      "minzoom": minZoomPriority2,
     },
   ];
 }
