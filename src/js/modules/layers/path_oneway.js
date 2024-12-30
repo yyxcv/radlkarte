@@ -1,4 +1,3 @@
-import getPavedRadlkarteLayersFor from "./path.js";
 
 const linePattern = [
   "match", ["get", "stress"],
