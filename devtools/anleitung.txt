@@ -1,0 +1,1 @@
+./spreet icons ../src/sprite@2x --retina

@@ -1,0 +1,58 @@
+{
+  "arrow": {
+    "height": 140,
+    "pixelRatio": 2,
+    "width": 140,
+    "x": 0,
+    "y": 0
+  },
+  "arrow_stress_0": {
+    "height": 140,
+    "pixelRatio": 2,
+    "width": 140,
+    "x": 140,
+    "y": 0
+  },
+  "arrow_stress_1": {
+    "height": 140,
+    "pixelRatio": 2,
+    "width": 140,
+    "x": 280,
+    "y": 0
+  },
+  "arrow_stress_2": {
+    "height": 140,
+    "pixelRatio": 2,
+    "width": 140,
+    "x": 0,
+    "y": 140
+  },
+  "bar": {
+    "height": 140,
+    "pixelRatio": 2,
+    "width": 140,
+    "x": 0,
+    "y": 280
+  },
+  "bar_stress_0": {
+    "height": 140,
+    "pixelRatio": 2,
+    "width": 140,
+    "x": 140,
+    "y": 140
+  },
+  "bar_stress_1": {
+    "height": 140,
+    "pixelRatio": 2,
+    "width": 140,
+    "x": 280,
+    "y": 140
+  },
+  "bar_stress_2": {
+    "height": 140,
+    "pixelRatio": 2,
+    "width": 140,
+    "x": 140,
+    "y": 280
+  }
+}
