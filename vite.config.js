@@ -9,12 +9,12 @@ export default defineConfig({
     assetsDir: 'assets',
   },
   plugins: [replaceGeoJsonInHtml(),],
-  server: {
-    proxy: {
-      'sprite': {
-        target: 'http://127.0.0.1:8080/',
-        changeOrigin: true,
-      },
-    },
-  },
+  // server: {
+  //   proxy: {
+  //     'sprite': {
+  //       target: 'http://127.0.0.1:8080/',
+  //       changeOrigin: true,
+  //     },
+  //   },
+  // },
 })
