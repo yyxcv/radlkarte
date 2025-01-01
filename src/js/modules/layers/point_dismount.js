@@ -4,13 +4,6 @@ const iconSize = [
   20, 0.08
 ];
 
-const iconImage = [
-
-]
-
-//TODO: https://maplibre.org/maplibre-gl-js/docs/examples/popup-on-click/
-
-
 const getDismountPointLayerFor = function (sourceName) {
   return [
     {

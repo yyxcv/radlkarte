@@ -4,6 +4,7 @@ import 'maplibre-gl/dist/maplibre-gl.css';
 import sources from "./sources"
 import layers from "./layers";
 import * as mapboxgl from "maplibre-gl";
+import addPopups from "./popups.js";
 
 function init() {
 
@@ -22,9 +23,10 @@ function init() {
         zoom: 12,
         hash: true
       }
-    )
-  ;
+    );
+
   map.addControl(new mapboxgl.NavigationControl());
+  addPopups(map);
 
 }
 
