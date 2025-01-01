@@ -4,56 +4,56 @@
     "pixelRatio": 1,
     "width": 100,
     "x": 1398,
-    "y": 0
+    "y": 350
   },
   "arrow_stress_0": {
     "height": 70,
     "pixelRatio": 1,
     "width": 100,
     "x": 1398,
-    "y": 70
+    "y": 420
   },
   "arrow_stress_1": {
     "height": 70,
     "pixelRatio": 1,
     "width": 100,
     "x": 1398,
-    "y": 140
+    "y": 490
   },
   "arrow_stress_2": {
     "height": 70,
     "pixelRatio": 1,
     "width": 100,
     "x": 1398,
-    "y": 210
+    "y": 560
   },
   "bar": {
     "height": 70,
     "pixelRatio": 1,
     "width": 70,
     "x": 1398,
-    "y": 280
+    "y": 630
   },
   "bar_stress_0": {
     "height": 70,
     "pixelRatio": 1,
     "width": 70,
-    "x": 1398,
-    "y": 350
+    "x": 1748,
+    "y": 0
   },
   "bar_stress_1": {
     "height": 70,
     "pixelRatio": 1,
     "width": 70,
-    "x": 1398,
-    "y": 420
+    "x": 1818,
+    "y": 0
   },
   "bar_stress_2": {
     "height": 70,
     "pixelRatio": 1,
     "width": 70,
-    "x": 1398,
-    "y": 490
+    "x": 1888,
+    "y": 0
   },
   "dismount": {
     "height": 618,
@@ -74,6 +74,13 @@
     "pixelRatio": 1,
     "width": 1398,
     "x": 0,
+    "y": 0
+  },
+  "reddot": {
+    "height": 350,
+    "pixelRatio": 1,
+    "width": 350,
+    "x": 1398,
     "y": 0
   },
   "warning": {

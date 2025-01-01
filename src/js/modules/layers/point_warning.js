@@ -4,6 +4,12 @@ const iconSize = [
   20, 0.08
 ];
 
+const iconImage = [
+  "step", ["zoom"],
+  "reddot",
+  12, "warning"
+];
+
 const getWarningPointLayerFor = function (sourceName) {
   return [
     {
@@ -12,7 +18,7 @@ const getWarningPointLayerFor = function (sourceName) {
       "source": sourceName,
       "filter": ["all", ["==", "warning", "yes"]],
       'layout': {
-        'icon-image': 'warning',
+        'icon-image': iconImage,
         'icon-size': iconSize,
         'icon-overlap': 'always'
       }

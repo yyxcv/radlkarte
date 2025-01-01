@@ -4,6 +4,12 @@ const iconSize = [
   20, 0.08
 ];
 
+const iconImage = [
+  "step", ["zoom"],
+  "reddot",
+  12, "nocargo_dismount"
+];
+
 const getNoCargoDismountPointLayerFor = function (sourceName) {
   return [
     {
@@ -12,7 +18,7 @@ const getNoCargoDismountPointLayerFor = function (sourceName) {
       "source": sourceName,
       "filter": ["all", ["==", "dismount", "yes"],["==", "nocargo", "yes"]],
       'layout': {
-        'icon-image': 'nocargo_dismount',
+        'icon-image': iconImage,
         'icon-size': iconSize,
         'icon-overlap': 'always'
       }
