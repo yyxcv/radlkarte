@@ -3,6 +3,8 @@ import getUnpavedLayersFor from "./path_unpaved.js";
 import getOneWayLayersFor from "./path_oneway.js";
 import getSteepLayersFor from "./path_steep.js";
 import getDismountPointLayerFor from "./point_dismount.js";
+import getNoCargoPointLayerFor from "./point_nocargo.js";
+import getNoCargoDismountPointLayerFor from "./point_nocargo_dismount.js";
 
 
 const commonSettings = {
@@ -25,6 +27,8 @@ const getRadlkarteLayersFor = function (sourceName) {
     ...getOneWayLayersFor(sourceName, commonSettings),
     ...getSteepLayersFor(sourceName, commonSettings),
     ...getDismountPointLayerFor(sourceName),
+    ...getNoCargoPointLayerFor(sourceName),
+    ...getNoCargoDismountPointLayerFor(sourceName),
   ]
 }
 

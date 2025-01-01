@@ -4,15 +4,15 @@ const iconSize = [
   20, 0.08
 ];
 
-const getDismountPointLayerFor = function (sourceName) {
+const getNoCargoPointLayerFor = function (sourceName) {
   return [
     {
-      "id": "dismount" + sourceName,
+      "id": "nocargo" + sourceName,
       "type": "symbol",
       "source": sourceName,
-      "filter": ["all", ["==", "dismount", "yes"], ["!=", "nocargo", "yes"]],
+      "filter": ["all", ["==", "nocargo", "yes"],["!=", "dismount", "yes"]],
       'layout': {
-        'icon-image': 'dismount',
+        'icon-image': 'nocargo',
         'icon-size': iconSize,
         'icon-overlap': 'always'
       }
@@ -20,4 +20,4 @@ const getDismountPointLayerFor = function (sourceName) {
   ];
 }
 
-export default getDismountPointLayerFor;
+export default getNoCargoPointLayerFor;

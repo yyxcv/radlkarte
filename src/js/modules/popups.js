@@ -45,6 +45,8 @@ const addPopup = function (map, layerPrefix, headline) {
 
 const addPopups = function (map) {
   addPopup(map, 'dismount', 'Schiebestelle');
+  addPopup(map, 'nocargo', 'Untauglich für Spezialräder');
+  addPopup(map, 'nocargo_dismount', 'Schiebestelle / Untauglich für Spezialräder');
 }
 
 export default addPopups;
