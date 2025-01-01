@@ -47,6 +47,7 @@ const addPopups = function (map) {
   addPopup(map, 'dismount', 'Schiebestelle');
   addPopup(map, 'nocargo', 'Untauglich für Spezialräder');
   addPopup(map, 'nocargo_dismount', 'Schiebestelle / Untauglich für Spezialräder');
+  addPopup(map, 'warning', 'Achtung');
 }
 
 export default addPopups;

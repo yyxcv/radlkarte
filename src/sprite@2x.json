@@ -1,79 +1,86 @@
 {
   "arrow": {
-    "height": 140,
-    "pixelRatio": 2,
-    "width": 200,
-    "x": 1350,
-    "y": 2812
+    "height": 70,
+    "pixelRatio": 1,
+    "width": 100,
+    "x": 1398,
+    "y": 0
   },
   "arrow_stress_0": {
-    "height": 140,
-    "pixelRatio": 2,
-    "width": 200,
-    "x": 1350,
-    "y": 2952
+    "height": 70,
+    "pixelRatio": 1,
+    "width": 100,
+    "x": 1398,
+    "y": 70
   },
   "arrow_stress_1": {
-    "height": 140,
-    "pixelRatio": 2,
-    "width": 200,
-    "x": 1350,
-    "y": 3092
+    "height": 70,
+    "pixelRatio": 1,
+    "width": 100,
+    "x": 1398,
+    "y": 140
   },
   "arrow_stress_2": {
-    "height": 140,
-    "pixelRatio": 2,
-    "width": 200,
-    "x": 1350,
-    "y": 3232
+    "height": 70,
+    "pixelRatio": 1,
+    "width": 100,
+    "x": 1398,
+    "y": 210
   },
   "bar": {
-    "height": 140,
-    "pixelRatio": 2,
-    "width": 140,
-    "x": 1350,
-    "y": 3372
+    "height": 70,
+    "pixelRatio": 1,
+    "width": 70,
+    "x": 1398,
+    "y": 280
   },
   "bar_stress_0": {
-    "height": 140,
-    "pixelRatio": 2,
-    "width": 140,
-    "x": 1350,
-    "y": 3512
+    "height": 70,
+    "pixelRatio": 1,
+    "width": 70,
+    "x": 1398,
+    "y": 350
   },
   "bar_stress_1": {
-    "height": 140,
-    "pixelRatio": 2,
-    "width": 140,
-    "x": 1350,
-    "y": 3652
+    "height": 70,
+    "pixelRatio": 1,
+    "width": 70,
+    "x": 1398,
+    "y": 420
   },
   "bar_stress_2": {
-    "height": 140,
-    "pixelRatio": 2,
-    "width": 140,
-    "x": 1350,
-    "y": 3792
+    "height": 70,
+    "pixelRatio": 1,
+    "width": 70,
+    "x": 1398,
+    "y": 490
   },
   "dismount": {
-    "height": 1188,
-    "pixelRatio": 2,
-    "width": 1350,
-    "x": 0,
-    "y": 2812
-  },
-  "nocargo": {
-    "height": 1406,
-    "pixelRatio": 2,
-    "width": 1406,
+    "height": 618,
+    "pixelRatio": 1,
+    "width": 703,
     "x": 0,
     "y": 1406
   },
+  "nocargo": {
+    "height": 703,
+    "pixelRatio": 1,
+    "width": 703,
+    "x": 0,
+    "y": 703
+  },
   "nocargo_dismount": {
-    "height": 1406,
-    "pixelRatio": 2,
-    "width": 2796,
+    "height": 703,
+    "pixelRatio": 1,
+    "width": 1398,
     "x": 0,
     "y": 0
+  },
+  "warning": {
+    "height": 617,
+    "pixelRatio": 1,
+    "width": 703,
+    "x": 703,
+    "y": 703
   }
 }

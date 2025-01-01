@@ -5,6 +5,7 @@ import getSteepLayersFor from "./path_steep.js";
 import getDismountPointLayerFor from "./point_dismount.js";
 import getNoCargoPointLayerFor from "./point_nocargo.js";
 import getNoCargoDismountPointLayerFor from "./point_nocargo_dismount.js";
+import getWarningPointLayerFor from "./point_warning.js";
 
 
 const commonSettings = {
@@ -29,6 +30,7 @@ const getRadlkarteLayersFor = function (sourceName) {
     ...getDismountPointLayerFor(sourceName),
     ...getNoCargoPointLayerFor(sourceName),
     ...getNoCargoDismountPointLayerFor(sourceName),
+    ...getWarningPointLayerFor(sourceName),
   ]
 }
 
