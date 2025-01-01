@@ -8,6 +8,7 @@ const iconImage = [
 
 ]
 
+//TODO: https://maplibre.org/maplibre-gl-js/docs/examples/popup-on-click/
 
 
 const getDismountPointLayerFor = function (sourceName) {
@@ -19,7 +20,8 @@ const getDismountPointLayerFor = function (sourceName) {
       "filter": ["all", ["==", "dismount", "yes"]],
       'layout': {
         'icon-image': 'dismount',
-        'icon-size': iconSize
+        'icon-size': iconSize,
+        'icon-overlap': 'always'
       }
     },
   ];
