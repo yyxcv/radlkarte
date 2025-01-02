@@ -1,3 +1,5 @@
+import commonLayerSettings from "./commonLayerSettings.js";
+
 const linePattern = [
   "match", ["get", "stress"],
   "0", "bar_stress_0",
@@ -18,7 +20,7 @@ const widthPriority1And2 = [
   20, 20
 ];
 
-const getSteepLayersFor = function (sourceName, commonSettings) {
+const getSteepLayersFor = function (sourceName) {
   return [
     {
       "id": "priority0" + sourceName + "_steep",
@@ -26,7 +28,7 @@ const getSteepLayersFor = function (sourceName, commonSettings) {
       "source": sourceName,
       "filter": ["all", ["==", "priority", "0"], ["==", "steep", "yes"]],
       "paint": {
-        "line-color": commonSettings.lineColors,
+        "line-color": commonLayerSettings.lineColors,
         "line-width": widthPriority0,
         "line-pattern": linePattern
       }
@@ -37,11 +39,11 @@ const getSteepLayersFor = function (sourceName, commonSettings) {
       "source": sourceName,
       "filter": ["all", ["==", "priority", "1"], ["==", "steep", "yes"]],
       "paint": {
-        "line-color": commonSettings.lineColors,
+        "line-color": commonLayerSettings.lineColors,
         "line-width": widthPriority1And2,
         "line-pattern": linePattern
       },
-      "minzoom": commonSettings.minZoomForPriority1,
+      "minzoom": commonLayerSettings.minZoomForPriority1,
     },
     {
       "id": "priority2" + sourceName + "_steep",
@@ -49,11 +51,11 @@ const getSteepLayersFor = function (sourceName, commonSettings) {
       "source": sourceName,
       "filter": ["all", ["==", "priority", "2"], ["==", "steep", "yes"]],
       "paint": {
-        "line-color": commonSettings.lineColors,
+        "line-color": commonLayerSettings.lineColors,
         "line-width": widthPriority1And2,
         "line-pattern": linePattern
       },
-      "minzoom": commonSettings.minZoomForPriority2,
+      "minzoom": commonLayerSettings.minZoomForPriority2,
     },
   ];
 }

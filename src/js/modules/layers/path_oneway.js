@@ -1,3 +1,5 @@
+import commonLayerSettings from "./commonLayerSettings.js";
+
 
 const linePattern = [
   "match", ["get", "stress"],
@@ -19,7 +21,7 @@ const widthPriority1And2 = [
   20, 20
 ];
 
-const getOneWayLayersFor = function (sourceName, commonSettings) {
+const getOneWayLayersFor = function (sourceName) {
   return [
     {
       "id": "priority0" + sourceName + "_oneway",
@@ -27,7 +29,7 @@ const getOneWayLayersFor = function (sourceName, commonSettings) {
       "source": sourceName,
       "filter": ["all", ["==", "priority", "0"], ["==", "oneway", "yes"]],
       "paint": {
-        "line-color": commonSettings.lineColors,
+        "line-color": commonLayerSettings.lineColors,
         "line-width": widthPriority0,
         "line-pattern": linePattern
       }
@@ -38,11 +40,11 @@ const getOneWayLayersFor = function (sourceName, commonSettings) {
       "source": sourceName,
       "filter": ["all", ["==", "priority", "1"], ["==", "oneway", "yes"]],
       "paint": {
-        "line-color": commonSettings.lineColors,
+        "line-color": commonLayerSettings.lineColors,
         "line-width": widthPriority1And2,
         "line-pattern": linePattern
       },
-      "minzoom": commonSettings.minZoomForPriority1,
+      "minzoom": commonLayerSettings.minZoomForPriority1,
     },
     {
       "id": "priority2" + sourceName + "_oneway",
@@ -50,11 +52,11 @@ const getOneWayLayersFor = function (sourceName, commonSettings) {
       "source": sourceName,
       "filter": ["all", ["==", "priority", "2"], ["==", "oneway", "yes"]],
       "paint": {
-        "line-color": commonSettings.lineColors,
+        "line-color": commonLayerSettings.lineColors,
         "line-width": widthPriority1And2,
         "line-pattern": linePattern
       },
-      "minzoom": commonSettings.minZoomForPriority2,
+      "minzoom": commonLayerSettings.minZoomForPriority2,
     },
   ];
 }

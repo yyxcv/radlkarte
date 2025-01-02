@@ -1,10 +1,12 @@
+import commonLayerSettings from "./commonLayerSettings.js";
+
 const widthPriority0 = [
   "interpolate", ["linear"], ["zoom"],
   9, 1,
   20, 10
 ];
 
-const getNormalLayersFor = function (sourceName, commonSettings) {
+const getNormalLayersFor = function (sourceName) {
   return [
     {
       "id": "priority0" + sourceName,
@@ -12,7 +14,7 @@ const getNormalLayersFor = function (sourceName, commonSettings) {
       "source": sourceName,
       "filter": ["all", ["==", "priority", "0"], ["!=", "unpaved", "yes"]],
       "paint": {
-        "line-color": commonSettings.lineColors,
+        "line-color": commonLayerSettings.lineColors,
         "line-width": widthPriority0,
       }
     },
@@ -22,10 +24,10 @@ const getNormalLayersFor = function (sourceName, commonSettings) {
       "source": sourceName,
       "filter": ["all", ["==", "priority", "1"], ["!=", "unpaved", "yes"]],
       "paint": {
-        "line-color": commonSettings.lineColors,
+        "line-color": commonLayerSettings.lineColors,
         "line-width": 1
       },
-      "minzoom": commonSettings.minZoomForPriority1,
+      "minzoom": commonLayerSettings.minZoomForPriority1,
     },
     {
       "id": "priority2" + sourceName,
@@ -33,10 +35,10 @@ const getNormalLayersFor = function (sourceName, commonSettings) {
       "source": sourceName,
       "filter": ["all", ["==", "priority", "2"], ["!=", "unpaved", "yes"]],
       "paint": {
-        "line-color": commonSettings.lineColors,
+        "line-color": commonLayerSettings.lineColors,
         "line-width": 1
       },
-      "minzoom": commonSettings.minZoomForPriority2,
+      "minzoom": commonLayerSettings.minZoomForPriority2,
     },
   ];
 }

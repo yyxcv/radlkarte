@@ -1,3 +1,5 @@
+import commonLayerSettings from "./commonLayerSettings.js";
+
 const iconSize = [
   "interpolate", ["linear"], ["zoom"],
   9, 0.02,
@@ -7,7 +9,7 @@ const iconSize = [
 const iconImage = [
   "step", ["zoom"],
   "reddot",
-  12, "nocargo_dismount"
+  commonLayerSettings.minZoomForIcons, "nocargo_dismount"
 ];
 
 const getNoCargoDismountPointLayerFor = function (sourceName) {

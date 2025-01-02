@@ -1,3 +1,6 @@
+import commonLayerSettings from "./commonLayerSettings.js";
+
+
 const iconSize = [
   "interpolate", ["linear"], ["zoom"],
   9, 0.02,
@@ -7,7 +10,7 @@ const iconSize = [
 const iconImage = [
   "step", ["zoom"],
   "reddot",
-  12, "dismount"
+  commonLayerSettings.minZoomForIcons, "dismount"
 ];
 
 

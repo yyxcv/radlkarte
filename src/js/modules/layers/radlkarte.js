@@ -8,25 +8,12 @@ import getNoCargoDismountPointLayerFor from "./point_nocargo_dismount.js";
 import getWarningPointLayerFor from "./point_warning.js";
 
 
-const commonSettings = {
-  minZoomForPriority1: 12,
-  minZoomForPriority2: 14,
-  lineColors: [
-    "match", ["get", "stress"],
-    "0", "#004B67",
-    "1", "#51A4B6",
-    "2", "#FF6600",
-    "#000"
-  ],
-};
-
-
 const getRadlkarteLayersFor = function (sourceName) {
   return [
-    ...getNormalLayersFor(sourceName, commonSettings),
-    ...getUnpavedLayersFor(sourceName, commonSettings),
-    ...getOneWayLayersFor(sourceName, commonSettings),
-    ...getSteepLayersFor(sourceName, commonSettings),
+    ...getNormalLayersFor(sourceName),
+    ...getUnpavedLayersFor(sourceName),
+    ...getOneWayLayersFor(sourceName),
+    ...getSteepLayersFor(sourceName),
     ...getDismountPointLayerFor(sourceName),
     ...getNoCargoPointLayerFor(sourceName),
     ...getNoCargoDismountPointLayerFor(sourceName),
