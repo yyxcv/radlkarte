@@ -6,6 +6,12 @@ const widthPriority0 = [
   20, 10
 ];
 
+const widthPriority1And2 = [
+  "interpolate", ["linear"], ["zoom"],
+  9, 1,
+  20, 1.8
+];
+
 const getNormalLayersFor = function (sourceName) {
   return [
     {
@@ -25,7 +31,7 @@ const getNormalLayersFor = function (sourceName) {
       "filter": ["all", ["==", "priority", "1"], ["!=", "unpaved", "yes"]],
       "paint": {
         "line-color": commonLayerSettings.lineColors,
-        "line-width": 1
+        "line-width": widthPriority1And2
       },
       "minzoom": commonLayerSettings.minZoomForPriority1,
     },
@@ -36,7 +42,7 @@ const getNormalLayersFor = function (sourceName) {
       "filter": ["all", ["==", "priority", "2"], ["!=", "unpaved", "yes"]],
       "paint": {
         "line-color": commonLayerSettings.lineColors,
-        "line-width": 1
+        "line-width": widthPriority1And2
       },
       "minzoom": commonLayerSettings.minZoomForPriority2,
     },

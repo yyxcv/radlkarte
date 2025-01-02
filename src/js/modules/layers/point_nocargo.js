@@ -1,11 +1,5 @@
 import commonLayerSettings from "./commonLayerSettings.js";
 
-const iconSize = [
-  "interpolate", ["linear"], ["zoom"],
-  9, 0.02,
-  20, 0.08
-];
-
 const iconImage = [
   "step", ["zoom"],
   "reddot",
@@ -21,7 +15,7 @@ const getNoCargoPointLayerFor = function (sourceName) {
       "filter": ["all", ["==", "nocargo", "yes"],["!=", "dismount", "yes"]],
       'layout': {
         'icon-image': iconImage,
-        'icon-size': iconSize,
+        'icon-size': commonLayerSettings.iconSize,
         'icon-overlap': 'always'
       }
     },
