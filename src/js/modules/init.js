@@ -3,7 +3,6 @@ import 'maplibre-gl/dist/maplibre-gl.css';
 
 import sources from "./sources"
 import layers from "./layers";
-import * as mapboxgl from "maplibre-gl";
 import addPopups from "./popups.js";
 import LayerControl from "./controls/LayerControl/LayerControl.js";
 import MenuControl from "./controls/MenuControl/MenuControl.js";
@@ -35,7 +34,7 @@ function init() {
     positionOptions: { enableHighAccuracy: true },
     trackUserLocation: true
   }));
-  map.addControl(new mapboxgl.NavigationControl());
+  map.addControl(new maplibregl.NavigationControl());
 
 
   addPopups(map);
