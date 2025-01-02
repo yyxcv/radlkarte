@@ -1,11 +1,12 @@
-import maplibregl from "maplibre-gl";
+import maplibregl, {ScaleControl} from "maplibre-gl";
 import 'maplibre-gl/dist/maplibre-gl.css';
 
 import sources from "./sources"
 import layers from "./layers";
 import * as mapboxgl from "maplibre-gl";
 import addPopups from "./popups.js";
-import LayerControl from "./controls/LayerControl.js";
+import LayerControl from "./controls/LayerControl/LayerControl.js";
+import MenuControl from "./controls/MenuControl/MenuControl.js";
 
 function init() {
 
@@ -25,6 +26,9 @@ function init() {
       hash: true
     }
   );
+
+  map.addControl(new MenuControl(), "top-left");
+  map.addControl(new ScaleControl({maxWidth: 300}), 'top-left');
 
   map.addControl(new LayerControl());
   map.addControl(new maplibregl.GeolocateControl({
