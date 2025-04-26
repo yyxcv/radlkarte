@@ -1,4 +1,7 @@
 @import "tailwindcss";
+@import "./font_awesome_base_style.css";
+@import "./font-awesome-icons.css";
+
 
 body {
   padding: 0;

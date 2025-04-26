@@ -1,0 +1,18 @@
+.fa-align-justify:before {
+  content: "\f039";
+}
+.fa-bullhorn:before {
+  content: "\f0a1";
+}
+.fa-info-circle:before {
+  content: "\f05a";
+}
+.fa-download:before {
+  content: "\f019";
+}
+.fa-envelope:before {
+  content: "\f0e0";
+}
+.fa-user-secret:before {
+  content: "\f21b";
+}

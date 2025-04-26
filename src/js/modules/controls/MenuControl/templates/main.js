@@ -1,16 +1,16 @@
 
 const main = `
-
-<div class="symbols">
+<div class="">
   <ul>
-    <li><button>Übersicht</button></li>
-    <li><button>Neu!</button></li> 
-    <li><button>Die Radlkarte stellt sich vor</button></li>
-    <li><button>Open Source</button></li>
-    <li><button>Kontakt</button></li>
-    <li><button>Datenschutz</button></li>
+    <li><button class="w-full! text-left"><i class="fa fa-align-justify"></i>Übersicht</button></li>
+    <li><button class="w-full! text-left"><i class="fa fa-bullhorn"></i>Neu!</button></li> 
+    <li><button class="w-full! text-left"><i class="fa fa-info-circle"></i>Die Radlkarte stellt sich vor</button></li>
+    <li><button class="w-full! text-left"><i class="fa fa-download"></i>Open Source</button></li>
+    <li><button class="w-full! text-left"><i class="fa fa-envelope"></i>Kontakt</button></li>
+    <li><button class="w-full! text-left"><i class="fa fa-user-secret"></i>Datenschutz</button></li>
   </ul>
-</div>
+</div> 
+
 `;
 
 export default main;
