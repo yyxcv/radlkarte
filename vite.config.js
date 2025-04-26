@@ -1,4 +1,5 @@
 import {defineConfig} from 'vite'
+import tailwindcss from '@tailwindcss/vite'
 import replaceGeoJsonInHtml from './vite-plugin-replace-geojson-in-html'
 
 export default defineConfig({
@@ -8,13 +9,16 @@ export default defineConfig({
     outDir: '../dist',
     assetsDir: 'assets',
   },
-  plugins: [replaceGeoJsonInHtml(),],
-  // server: {
-  //   proxy: {
-  //     'sprite': {
-  //       target: 'http://127.0.0.1:8080/',
-  //       changeOrigin: true,
-  //     },
-  //   },
-  // },
+  plugins: [
+    tailwindcss(),
+    replaceGeoJsonInHtml()
+  ],
+  server: {
+    // proxy: {
+    //   'sprite': {
+    //     target: 'http://127.0.0.1:8080/',
+    //     changeOrigin: true,
+    //   },
+    // },
+  },
 })
