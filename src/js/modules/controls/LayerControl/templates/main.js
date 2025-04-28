@@ -1,13 +1,11 @@
 
 const main = `
-    <div class="group">
-    
-      <button class="group-hover:hidden! m-2">
+      <button class="toggle-button">
            <img src="/image/layers-2x.png" alt="Ebenen Symbol">
       </button>
     
-      <div class="hidden group-hover:block">
-        <fieldset class="flex flex-col p-3">
+      <div class="layer-wrapper">
+        <fieldset>
             <label>
                 <input type="radio" name="background_layer" value="carto" checked>
                 <span>Straßenkarte</span>
@@ -30,7 +28,7 @@ const main = `
             </label>
         </fieldset>
         
-        <fieldset class=" flex flex-col p-3 border-t border-gray-300">
+        <fieldset>
             <label>
                 <input type="checkbox" name="background_layer" value="problems" checked>
                 <span>Problemstellen</span>
@@ -65,7 +63,6 @@ const main = `
             </label>
         </fieldset>
       </div>
-    </div>
 `;
 
 export default main

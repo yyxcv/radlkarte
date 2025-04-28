@@ -1,17 +1,6 @@
-@import "./font_awesome_base_style.css";
-@import "./font-awesome-icons.css";
-
-
-$primary: #B8CC24; // Grün für Logo, Flächen & andere Stilelemente (satt)
-$primary-font:  #AAB622; // Grün für Schrift
-$primary-background: #F0F4D9; // Grün für Flächen (sehr hell)
-
-$secondary: #004B67; // Blau für Text & andere Stilelemente (satt, dunkel)
-
-$stress-0: #51A4B6;
-$stress-1: #A2C8D3;
-$stress-2: #FF6600;
-
+@import "../assets/css/common.scss";
+@import "../assets/css/font_awesome_base_style.css";
+@import "../assets/css/font-awesome-icons.css";
 
 body {
   padding: 0;
@@ -24,6 +13,11 @@ body,
   height: 100%;
   width: 100%;
 }
+
+fieldset {
+  border: none;
+}
+
 
 #radlobby-logo {
   position: fixed;
@@ -142,21 +136,21 @@ div.legend-oneway {
 
 div.legend-unpaved {
   background: repeating-linear-gradient(90deg,
-  #999 0,
-  #999 20px,
-  #fff 20px,
-  #fff 30px);
+    #999 0,
+    #999 20px,
+    #fff 20px,
+    #fff 30px);
 }
 
 div.legend-steep {
   height: 25px;
   background: repeating-linear-gradient(90deg,
-  transparent 0,
-  transparent 9px,
-  #999 9px,
-  #999 11px,
-  transparent 11px,
-  transparent 30px);
+    transparent 0,
+    transparent 9px,
+    #999 9px,
+    #999 11px,
+    transparent 11px,
+    transparent 30px);
 }
 
 div.legend-container {

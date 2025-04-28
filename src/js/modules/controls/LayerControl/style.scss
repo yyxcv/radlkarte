@@ -1,0 +1,37 @@
+@import "../../../../assets/css/common.scss";
+
+.layer-control {
+  &:hover {
+    .toggle-button {
+      display: none;
+    }
+
+    .layer-wrapper {
+      display: block;
+    }
+  }
+
+  .toggle-button {
+    padding: 9px;
+    height: auto;
+    width: auto;
+    img{
+      height: 26px;
+      width: 26px;
+    }
+  }
+
+  .layer-wrapper {
+    display: none;
+
+    fieldset {
+      padding: 12px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    fieldset:not(:first-child) {
+      border-top: 1px solid $border-1;
+    }
+  }
+}
