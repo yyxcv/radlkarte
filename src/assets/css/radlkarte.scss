@@ -2,6 +2,17 @@
 @import "./font-awesome-icons.css";
 
 
+$primary: #B8CC24; // Grün für Logo, Flächen & andere Stilelemente (satt)
+$primary-font:  #AAB622; // Grün für Schrift
+$primary-background: #F0F4D9; // Grün für Flächen (sehr hell)
+
+$secondary: #004B67; // Blau für Text & andere Stilelemente (satt, dunkel)
+
+$stress-0: #51A4B6;
+$stress-1: #A2C8D3;
+$stress-2: #FF6600;
+
+
 body {
   padding: 0;
   margin: 0;
@@ -38,12 +49,12 @@ h2,
 h3,
 h4 {
   font-family: 'Museo 500 Regular', sans-serif;
-  color: #004B67;
+  color: $secondary;
 }
 
 h5,
 a {
-  color: #004B67;
+  color: $secondary;
 }
 
 h5,
@@ -56,7 +67,7 @@ h1 {
   font-size: 100%;
   margin-top: 0;
   margin-bottom: 0.2em;
-  color: #B8CC24;
+  color: $primary;
 }
 
 h3 {
@@ -72,13 +83,13 @@ strong {
 }
 
 input {
-  accent-color: #004B67;
+  accent-color: $secondary;
 }
 
 
 a:hover {
   color: white !important;
-  background-color: #B8CC24 !important;
+  background-color: $primary !important;
 }
 
 ul.legend-leftified {
@@ -107,15 +118,15 @@ div.legend-regional {
 }
 
 div.legend-calm {
-  background-color: #004B67;
+  background-color: $secondary;
 }
 
 div.legend-medium {
-  background-color: #51A4B6;
+  background-color: $stress-1;
 }
 
 div.legend-stressful {
-  background-color: #FF6600;
+  background-color: $stress-2;
 }
 
 div.legend-oneway {
@@ -164,15 +175,3 @@ ul.legend li img {
   margin-left: 0.5em;
   margin-bottom: 0.5em;
 }
-
-/*
-- #AAB622 Grün für Schrift
-
-- #F0F4D9 Grün für Flächen (sehr hell)
-- #B8CC24 Grün für Logo, Flächen & andere Stilelemente (satt)
-- #004B67 Blau für Text & andere Stilelemente (satt, dunkel)
-
-- #51A4B6 Sekundärfarbe (Türkis)
-- #A2C8D3 Sekundärfarbe (Hellblau)
-- #FF6600 Sekundärfarbe (Orange)
-*/
