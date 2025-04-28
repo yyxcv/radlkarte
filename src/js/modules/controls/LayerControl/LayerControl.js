@@ -1,5 +1,5 @@
 import "./style.scss";
-import main from "./templates/main.js";
+import template from "./templates/template.js";
 
 export default class LayerControl {
 
@@ -7,7 +7,7 @@ export default class LayerControl {
     this._map = map;
     this._container = document.createElement('div');
     this._container.className = 'maplibregl-ctrl maplibregl-ctrl-group layer-control';
-    this._container.innerHTML = main;
+    this._container.innerHTML = template;
 
     return this._container;
   }

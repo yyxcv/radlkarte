@@ -1,5 +1,5 @@
 
-const main = `
+const template = `
       <button class="toggle-button">
            <img src="/image/layers-2x.png" alt="Ebenen Symbol">
       </button>
@@ -65,5 +65,5 @@ const main = `
       </div>
 `;
 
-export default main
+export default template
 ;

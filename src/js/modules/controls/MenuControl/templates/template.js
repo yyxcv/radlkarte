@@ -1,6 +1,5 @@
 
-const main = `
-<div class="">
+const template = `
   <ul>
     <li><button class="w-full! text-left"><i class="fa fa-align-justify"></i>Übersicht</button></li>
     <li><button class="w-full! text-left"><i class="fa fa-bullhorn"></i>Neu!</button></li> 
@@ -9,8 +8,6 @@ const main = `
     <li><button class="w-full! text-left"><i class="fa fa-envelope"></i>Kontakt</button></li>
     <li><button class="w-full! text-left"><i class="fa fa-user-secret"></i>Datenschutz</button></li>
   </ul>
-</div> 
-
 `;
 
-export default main;
+export default template;
